@@ -4,3 +4,6 @@
 // Requisitos:
 // Utilize HTML para estruturar a página.
 // Use JavaScript para adicionar a função de evento onclick que exibe o alerta.
+function exibirAlerta() {
+  alert("Botão clicado!");
+}
