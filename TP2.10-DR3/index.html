@@ -5,9 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DR3_TP2</title>
     <script src="./script.js" defer></script>
+    <style>
+      #quadrado {
+        transition: transform 0.5s linear;
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+        margin: 50px;
+      }
+      .girar {
+        animation: girar 2s linear infinite;
+      }
+      @keyframes girar {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
   </head>
   <body style="background-color: rgba(182, 126, 21, 0.61)">
     <h1>DR3_TP2</h1>
-    <a href="http://google.com.br" target="_blank">Link para o Google</a>
+    <div id="quadrado"></div>
   </body>
 </html>
