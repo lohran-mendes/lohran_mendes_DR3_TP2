@@ -17,6 +17,5 @@ function carregaPagina() {
   setTimeout(() => {
     paragrafo.remove();
     body.appendChild(imagem);
-  }, 2000);
+  }, 1000);
 }
-carregaPagina();
