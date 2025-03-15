@@ -5,9 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DR3_TP2</title>
     <script src="./script.js" defer></script>
+    <style>
+      .accordion-item {
+        display: flex;
+        flex-direction: column;
+        max-width: 550px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        padding: 10px;
+        background-color: rgba(90, 148, 129, 0.568);
+      }
+      .accordion-item h2,
+      .accordion-item p {
+        margin: 0px;
+      }
+      .container {
+        display: flex;
+        justify-content: space-between;
+      }
+      img {
+        transition: transform 0.3s ease-in-out;
+      }
+      .container:hover {
+        cursor: pointer;
+      }
+      img.aberto {
+        transform: rotate(-180deg);
+      }
+      .accordion-item p {
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+      }
+      .accordion-item p.ativo {
+        max-height: 500px;
+        opacity: 1;
+      }
+    </style>
   </head>
   <body style="background-color: rgba(182, 126, 21, 0.61)">
     <h1>DR3_TP2</h1>
-    <div class="conteudo">caixa</div>
+    <div class="accordion-item">
+      <div class="container">
+        <h2>Corinthians - A História de um Gigante</h2>
+        <img
+          src="./img/accordion-arrow.webp"
+          alt="uma seta para baixo"
+          height="30"
+          width="30"
+          class="teste"
+        />
+      </div>
+      <p>
+        O Sport Club Corinthians Paulista é um dos maiores clubes do Brasil e do
+        mundo. Fundado em 1910, conquistou títulos inesquecíveis, como a
+        Libertadores e o Mundial de Clubes da FIFA em 2012, tornando-se o
+        primeiro campeão mundial invicto. Com uma torcida apaixonada, o Timão é
+        conhecido por sua garra e superação, protagonizando momentos históricos
+        no futebol sul-americano e brasileiro.
+      </p>
+    </div>
+    <div class="accordion-item">
+      <div class="container">
+        <h2>Manchester United - A Lenda de Old Trafford</h2>
+        <img
+          src="./img/accordion-arrow.webp"
+          alt="uma seta para baixo"
+          height="30"
+          width="30"
+        />
+      </div>
+      <p>
+        O Manchester United é sinônimo de tradição e glória no futebol inglês.
+        Desde sua fundação em 1878, o clube acumulou uma coleção de títulos,
+        incluindo múltiplas Premier Leagues e três Champions League. Sob o
+        comando de Alex Ferguson, viveu uma era dourada, dominando a Europa com
+        craques como Ryan Giggs, Paul Scholes e Cristiano Ronaldo. O United
+        segue sendo um dos times mais respeitados do mundo.
+      </p>
+    </div>
+    <div class="accordion-item">
+      <div class="container">
+        <h2>Real Madrid - O Maior Campeão da Europa</h2>
+        <img
+          src="./img/accordion-arrow.webp"
+          alt="uma seta para baixo"
+          height="30"
+          width="30"
+        />
+      </div>
+      <p>
+        O Real Madrid construiu um império no futebol mundial. Fundado em 1902,
+        o clube espanhol é o maior vencedor da Champions League, acumulando mais
+        de 14 títulos da competição. Lendas como Alfredo Di Stéfano, Zidane e
+        Cristiano Ronaldo ajudaram a eternizar a equipe como um dos maiores
+        times da história. Com uma torcida global e um legado incomparável, o
+        Real Madrid segue dominando o cenário internacional.
+      </p>
+    </div>
   </body>
 </html>

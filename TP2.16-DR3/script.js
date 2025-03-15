@@ -12,3 +12,27 @@
 // Dica: Consulte oAccordion do Bootstrap como referência.
 
 // Assim que terminar, salve seu trabalho em PDF nomeando o arquivo conforme a regra “nome_sobrenome_DR3_TP1.PDF” e poste como resposta a este TP.
+const accordion = document.querySelectorAll(".accordion-item");
+
+accordion.forEach((div) =>
+  div.addEventListener("click", () => mostrarParagrafo(div))
+);
+
+function mostrarParagrafo(div) {
+  const p = div.querySelector("p");
+  const img = div.querySelector(".container img");
+
+  if (img.classList.contains("aberto") && p.classList.contains("ativo")) {
+    img.classList.remove("aberto");
+    p.classList.remove("ativo");
+  } else {
+    accordion.forEach((div) => {
+      const pDestaDiv = div.querySelector("p");
+      const imgDestaDiv = div.querySelector(".container img");
+      imgDestaDiv.classList.remove("aberto");
+      pDestaDiv.classList.remove("ativo");
+    });
+    img.classList.add("aberto");
+    p.classList.add("ativo");
+  }
+}
