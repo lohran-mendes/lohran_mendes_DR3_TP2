@@ -5,9 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DR3_TP2</title>
     <script src="./script.js" defer></script>
+    <style>
+      th,
+      td {
+        border: 1px solid rgb(53, 53, 53);
+        padding: 8px 10px;
+        text-align: center;
+      }
+      .vermelho {
+        background-color: rgba(255, 0, 0, 0.329);
+      }
+      .verde {
+        background-color: rgba(21, 255, 0, 0.349);
+      }
+      table {
+        border-collapse: collapse;
+      }
+    </style>
   </head>
   <body style="background-color: rgba(182, 126, 21, 0.61)">
     <h1>DR3_TP2</h1>
-    <img src="./assets/cha.jpeg" alt="Uma xícara de chá" />
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Nome</th>
+          <th scope="col">Notas</th>
+          <th scope="col">Verificar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>João</td>
+          <td>6</td>
+          <td>
+            <button onclick="checarAprovacao(event)">Checar aprovação</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Maria</td>
+          <td>8</td>
+          <td>
+            <button onclick="checarAprovacao(event)">Checar aprovação</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Anna</td>
+          <td>5</td>
+          <td>
+            <button onclick="checarAprovacao(event)">Checar aprovação</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>
