@@ -5,9 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DR3_TP2</title>
     <script src="./script.js" defer></script>
+    <style>
+      th,
+      td {
+        border: 1px solid rgb(53, 53, 53);
+        padding: 8px 10px;
+      }
+      table {
+        border-collapse: collapse;
+      }
+      .vermelho {
+        background-color: rgba(255, 0, 0, 0.329);
+      }
+      .azul {
+        background-color: rgba(0, 0, 255, 0.349);
+      }
+    </style>
   </head>
   <body style="background-color: rgba(182, 126, 21, 0.61)">
     <h1>DR3_TP2</h1>
-    <a href="http://google.com.br" target="_blank" id="link">Link</a>
+    <table>
+      <tr class="azul">
+        <td>Lohran</td>
+        <td>Maria</td>
+        <td>João</td>
+        <td>Anna</td>
+      </tr>
+      <tr class="vermelho">
+        <td>24</td>
+        <td>23</td>
+        <td>23</td>
+        <td>13</td>
+      </tr>
+    </table>
+    <p>
+      Achei o enunciado confuso ao pedir para colorir as linhas ímpares e pares,
+      já que a tabela tem apenas duas linhas. Também não entendi o motivo de
+      alterar a cor no script, pois a mudança não seria visível na saída. Por
+      isso, utilizei um setInterval para alternar as classes continuamente.
+    </p>
   </body>
 </html>

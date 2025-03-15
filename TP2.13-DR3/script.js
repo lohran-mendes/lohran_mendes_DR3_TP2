@@ -8,3 +8,12 @@
 // Ao clicar no botão (<button>), chame uma função que mostre o modal.
 // Ao clicar na imagem com id "close" dentro da modal, oculte o modal novamente.
 // Obs: Toda manipulação deve ser feita com o DOM.
+const modal = document.getElementById("modal");
+const button = document.createElement("button");
+modal.classList.add("hide");
+button.innerText = "Mostrar modal";
+const img = document.querySelector("img");
+document.body.insertBefore(button, modal);
+
+button.addEventListener("click", () => modal.classList.remove("hide"));
+img.addEventListener("click", () => modal.classList.add("hide"));
