@@ -10,3 +10,16 @@
 // Crie um elemento <li> com o texto "Nova entrada".
 // Adicione o <li> criado como filho do elemento <ul> com o id "lista".
 // Obs: Não altere o arquivo index.html manualmente. Use apenas o DOM para manipulação.
+const body = document.body;
+const button = document.createElement("button");
+const lista = document.createElement("ul");
+lista.id = "lista";
+button.innerText = "Inserir";
+body.append(button);
+body.append(lista);
+
+button.addEventListener("click", () => {
+  const novoItem = document.createElement("li");
+  novoItem.innerText = "Nova entrada";
+  lista.appendChild(novoItem);
+});
